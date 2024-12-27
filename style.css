@@ -27,6 +27,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
 }
@@ -136,6 +137,7 @@ header .testla-icon {
 
 .container2 {
     height: 100vh;
+    height: 100svh;
     display: grid;
     place-items: center;
     background-image: url(Image/Cybertruck-004-2160.jpg);
@@ -162,7 +164,7 @@ header .testla-icon {
     @media (max-width: 768px) {
         align-items: flex-start;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
         height: fit-content;
         margin-top: 70px;
     }
