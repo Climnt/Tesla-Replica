@@ -1,0 +1,207 @@
+body {
+    font-family: var(--font-OpenSans);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Test Your Fuckng Code ( Ctr + K + C */
+    /* outline: 2px solid blueviolet; */
+}
+:root {
+    /* Google Fonts (4) */
+    --font-OpenSans:"Open Sans", serif;
+    --font-kanit: "Kanit", serif;
+    --font-roboto: "Roboto", serif;
+    --font-orbitron:  "Orbitron", serif;
+
+    /* Colors */
+    --gray-transparent:rgba(0,0,0,0.4);;
+    --background-ui-dark:rgb(32, 33, 36);
+}
+
+/* Real Code Stars Here 🗣️🗣️🗣️ */
+.container1 {
+    background: url(Image/tesla-cybertruck-3840x2160-13748.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-family: var(--font-kanit);
+}   
+
+header .testla-logo {
+    height: 50px;
+    margin-left: 20px;
+
+    & img {
+        object-fit: cover;
+        height: 50px;
+        width: 140px;
+    }
+}
+
+header nav {
+    height: 100%;
+    width: 50%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 410;
+
+    @media (max-width: 650px) {
+        display: none;
+    }
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        height: 100%;
+        width: 100%;
+        
+        & li {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center; 
+            border-radius: 10px;
+        }
+    }
+}
+
+header .testla-icon {
+    height: 100%;
+    width: 140px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-right: 40px;
+} 
+
+.cybertruck-img-button {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    .cybertruck-logo {
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        .cybertruck-img {
+            object-fit: cover;
+            width: 430px;
+            filter: invert(100%) sepia(22%) saturate(3972%) hue-rotate(205deg) brightness(129%) contrast(113%);
+
+            @media (max-width: 425px) {
+                width: 300px;
+            }
+            @media (max-width: 310px) {
+                width: 200px;
+            }
+        }
+    }
+    
+    .cybertruck-buttton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 35px;
+
+        & button {
+            height: 40px;
+            width: 204px;
+            background-color: rgb(21, 25, 32);
+            border: none;
+            color: white;
+            border-top: solid 3px white;
+            font-size: 0.7rem;
+        }
+    }
+}
+
+
+.container2 {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url(Image/Cybertruck-004-2160.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 50px;
+    }
+}
+
+.container2 .info-wrapper {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 55px;
+    
+    @media (max-width: 768px) {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: fit-content;
+        margin-top: 70px;
+    }
+
+    .nest-info {
+        padding: 5px;
+
+        .info-car {
+            width: 121px;
+            height: 69px;
+            background-color: var(--gray-transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            & h3, p {
+                margin-left: 7px;
+                padding-block: 2px;
+                color: white;
+            }
+            & h3 {
+                font-family: var(--font-orbitron);
+            }
+            & p {
+                font-size: 0.85rem;
+                font-family: var(--font-roboto);
+            }
+        }
+    }
+
+    & .nest-info:nth-child(1) {
+       border-top: solid 2px white;
+       border-right: solid 2px white;
+    }
+    & .nest-info:nth-child(2) {
+        border-top: solid 2px white;
+    }
+    & .nest-info:nth-child(3) {
+        border-top: solid 2px white;
+        border-left: solid 2px white;
+    }
+}
