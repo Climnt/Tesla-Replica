@@ -31,6 +31,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -148,8 +149,10 @@ header .testla-icon {
     @media (max-width: 768px) {
         display: flex;
         justify-content: center;
+        align-items: flex-end;
+    }
+    @media (max-width: 425px) {
         align-items: flex-start;
-        column-gap: 50px;
     }
 }
 
@@ -166,7 +169,10 @@ header .testla-icon {
         flex-wrap: wrap;
         gap: 15px;
         height: fit-content;
-        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 50px;
     }
 
     .nest-info {
@@ -196,14 +202,14 @@ header .testla-icon {
     }
 
     & .nest-info:nth-child(1) {
-       border-top: solid 2px white;
-       border-right: solid 2px white;
+       border-top: solid 2px silver;
+       border-right: solid 2px silver;
     }
     & .nest-info:nth-child(2) {
-        border-top: solid 2px white;
+        border-top: solid 2px silver;
     }
     & .nest-info:nth-child(3) {
-        border-top: solid 2px white;
-        border-left: solid 2px white;
+        border-top: solid 2px silver;
+        border-left: solid 2px silver;
     }
 }
