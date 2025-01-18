@@ -1,215 +1,289 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
-    font-family: var(--font-OpenSans);
+	 font-family: var(--font-OpenSans);
 }
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /* Test Your Fuckng Code ( Ctr + K + C */
-    /* outline: 2px solid blueviolet; */
+ * {
+	 padding: 0;
+	 margin: 0;
+	 -webkit-box-sizing: border-box;
+	         box-sizing: border-box;
+	/* Test Your Fuckng Code ( Ctr + K + C */
+	/* outline: 2px solid blueviolet;
+	 */
 }
-:root {
-    /* Google Fonts (4) */
-    --font-OpenSans:"Open Sans", serif;
-    --font-kanit: "Kanit", serif;
-    --font-roboto: "Roboto", serif;
-    --font-orbitron:  "Orbitron", serif;
-
-    /* Colors */
-    --gray-transparent:rgba(0,0,0,0.4);;
-    --background-ui-dark:rgb(32, 33, 36);
+ :root {
+	/* Google Fonts (4) */
+	 --font-OpenSans: "Open Sans", serif;
+	 --font-kanit: "Kanit", serif;
+	 --font-roboto: "Roboto", serif;
+	 --font-orbitron: "Orbitron", serif;
+	/* Colors */
+	 --gray-transparent: rgba(0, 0, 0, 0.4);
+	 --background-ui-dark: #202124;
 }
-
 /* Real Code Stars Here 🗣️🗣️🗣️ */
-.container1 {
-    background: url(Image/tesla-cybertruck-3840x2160-13748.jpg); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    height: 100svh;
-    display: flex;
-    flex-direction: column;
+ .container1 {
+	 background: url(Image/tesla-cybertruck-3840x2160-13748.jpg);
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 height: 100vh;
+	 height: 100svh;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-orient: vertical;
+	 -webkit-box-direction: normal;
+	     -ms-flex-direction: column;
+	         flex-direction: column;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    font-family: var(--font-kanit);
-}   
-
-header .testla-logo {
-    height: 50px;
-    margin-left: 20px;
-
-    & img {
-        object-fit: cover;
-        height: 50px;
-        width: 140px;
-    }
+ header {
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: justify;
+	     -ms-flex-pack: justify;
+	         justify-content: space-between;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+	 width: 100%;
+	 height: 70px;
+	 font-family: var(--font-kanit);
 }
-
-header nav {
-    height: 100%;
-    width: 50%;
-    color: white;
-    font-size: 1rem;
-    font-weight: 410;
-
-    @media (max-width: 650px) {
-        display: none;
-    }
-
-    & ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        height: 100%;
-        width: 100%;
-        
-        & li {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center; 
-            border-radius: 10px;
-        }
-    }
+ header .testla-logo {
+	 height: 50px;
+	 margin-left: 20px;
 }
-
-header .testla-icon {
-    height: 100%;
-    width: 140px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
-    margin-right: 40px;
-} 
-
-.cybertruck-img-button {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-
-    .cybertruck-logo {
-        width: 100%;
-        display: grid;
-        place-items: center;
-
-        .cybertruck-img {
-            object-fit: cover;
-            width: 430px;
-            filter: invert(100%) sepia(22%) saturate(3972%) hue-rotate(205deg) brightness(129%) contrast(113%);
-
-            @media (max-width: 425px) {
-                width: 300px;
-            }
-            @media (max-width: 310px) {
-                width: 200px;
-            }
-        }
-    }
-    
-    .cybertruck-buttton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 35px;
-
-        & button {
-            height: 40px;
-            width: 204px;
-            background-color: rgb(21, 25, 32);
-            border: none;
-            color: white;
-            border-top: solid 3px white;
-            font-size: 0.7rem;
-        }
-    }
+ header .testla-logo img {
+	 -o-object-fit: cover;
+	    object-fit: cover;
+	 height: 50px;
+	 width: 140px;
 }
-
-
-.container2 {
-    height: 100vh;
-    height: 100svh;
-    display: grid;
-    place-items: center;
-    background-image: url(Image/Cybertruck-004-2160.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    @media (max-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    @media (max-width: 425px) {
-        align-items: flex-start;
-    }
+ header nav {
+	 height: 100%;
+	 width: 50%;
+	 color: white;
+	 font-size: 1rem;
+	 font-weight: 410;
 }
-
-.container2 .info-wrapper {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 55px;
-    
-    @media (max-width: 768px) {
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 15px;
-        height: fit-content;
-        margin-bottom: 20px;
-    }
-    @media (max-width: 768px) {
-        margin-top: 50px;
-    }
-
-    .nest-info {
-        padding: 5px;
-
-        .info-car {
-            width: 121px;
-            height: 69px;
-            background-color: var(--gray-transparent);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            & h3, p {
-                margin-left: 7px;
-                padding-block: 2px;
-                color: white;
-            }
-            & h3 {
-                font-family: var(--font-orbitron);
-            }
-            & p {
-                font-size: 0.85rem;
-                font-family: var(--font-roboto);
-            }
-        }
-    }
-
-    & .nest-info:nth-child(1) {
-       border-top: solid 2px silver;
-       border-right: solid 2px silver;
-    }
-    & .nest-info:nth-child(2) {
-        border-top: solid 2px silver;
-    }
-    & .nest-info:nth-child(3) {
-        border-top: solid 2px silver;
-        border-left: solid 2px silver;
-    }
+ @media (max-width: 650px) {
+	 header nav {
+		 display: none;
+	}
 }
+ header nav ul {
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: center;
+	     -ms-flex-pack: center;
+	         justify-content: center;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+	 gap: 25px;
+	 height: 100%;
+	 width: 100%;
+}
+ header nav ul li {
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: space-evenly;
+	     -ms-flex-pack: space-evenly;
+	         justify-content: space-evenly;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+	 border-radius: 10px;
+}
+ header .testla-icon {
+	 height: 100%;
+	 width: 140px;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: end;
+	     -ms-flex-pack: end;
+	         justify-content: flex-end;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+	 gap: 8px;
+	 margin-right: 40px;
+}
+ .cybertruck-img-button {
+	 height: 100%;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: justify;
+	     -ms-flex-pack: justify;
+	         justify-content: space-between;
+	 -webkit-box-orient: vertical;
+	 -webkit-box-direction: normal;
+	     -ms-flex-direction: column;
+	         flex-direction: column;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+}
+ .cybertruck-img-button .cybertruck-logo {
+	 width: 100%;
+	 display: -ms-grid;
+	 display: grid;
+	 place-items: center;
+}
+ .cybertruck-img-button .cybertruck-logo .cybertruck-img {
+	 -o-object-fit: cover;
+	    object-fit: cover;
+	 width: 430px;
+	 -webkit-filter: invert(100%) sepia(22%) saturate(3972%) hue-rotate(205deg) brightness(129%) contrast(113%);
+	         filter: invert(100%) sepia(22%) saturate(3972%) hue-rotate(205deg) brightness(129%) contrast(113%);
+}
+ @media (max-width: 425px) {
+	 .cybertruck-img-button .cybertruck-logo .cybertruck-img {
+		 width: 300px;
+	}
+}
+ @media (max-width: 310px) {
+	 .cybertruck-img-button .cybertruck-logo .cybertruck-img {
+		 width: 200px;
+	}
+}
+ .cybertruck-img-button .cybertruck-buttton {
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: center;
+	     -ms-flex-pack: center;
+	         justify-content: center;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+	 width: 100%;
+	 margin-bottom: 35px;
+}
+ .cybertruck-img-button .cybertruck-buttton button {
+	 height: 40px;
+	 width: 204px;
+	 background-color: #151920;
+	 border: none;
+	 color: white;
+	 border-top: solid 3px white;
+	 font-size: 0.7rem;
+}
+ .container2 {
+	 height: 100vh;
+	 height: 100svh;
+	 display: -ms-grid;
+	 display: grid;
+	 place-items: center;
+	 background-image: url(Image/Cybertruck-004-2160.jpg);
+	 background-size: cover;
+	 background-position: center;
+	 background-repeat: no-repeat;
+}
+ @media (max-width: 768px) {
+	 .container2 {
+		 display: -webkit-box;
+		 display: -ms-flexbox;
+		 display: flex;
+		 -webkit-box-pack: center;
+		     -ms-flex-pack: center;
+		         justify-content: center;
+		 -webkit-box-align: end;
+		     -ms-flex-align: end;
+		         align-items: flex-end;
+	}
+}
+ @media (max-width: 425px) {
+	 .container2 {
+		 -webkit-box-align: start;
+		     -ms-flex-align: start;
+		         align-items: flex-start;
+	}
+}
+ .container2 .info-wrapper {
+	 width: 100%;
+	 height: 70%;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-align: end;
+	     -ms-flex-align: end;
+	         align-items: flex-end;
+	 -webkit-box-pack: center;
+	     -ms-flex-pack: center;
+	         justify-content: center;
+	 gap: 55px;
+}
+ @media (max-width: 768px) {
+	 .container2 .info-wrapper {
+		 -webkit-box-align: start;
+		     -ms-flex-align: start;
+		         align-items: flex-start;
+		 -ms-flex-wrap: wrap;
+		     flex-wrap: wrap;
+		 gap: 15px;
+		 height: -webkit-fit-content;
+		 height: -moz-fit-content;
+		 height: fit-content;
+		 margin-bottom: 20px;
+	}
+}
+ @media (max-width: 768px) {
+	 .container2 .info-wrapper {
+		 margin-top: 50px;
+	}
+}
+ .container2 .info-wrapper .nest-info {
+	 padding: 5px;
+}
+ .container2 .info-wrapper .nest-info .info-car {
+	 width: 121px;
+	 height: 69px;
+	 background-color: var(--gray-transparent);
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-orient: vertical;
+	 -webkit-box-direction: normal;
+	     -ms-flex-direction: column;
+	         flex-direction: column;
+	 -webkit-box-pack: center;
+	     -ms-flex-pack: center;
+	         justify-content: center;
+}
+ .container2 .info-wrapper .nest-info .info-car h3, .container2 .info-wrapper .nest-info .info-car p {
+	 margin-left: 7px;
+	 padding-block: 2px;
+	 color: white;
+}
+ .container2 .info-wrapper .nest-info .info-car h3 {
+	 font-family: var(--font-orbitron);
+}
+ .container2 .info-wrapper .nest-info .info-car p {
+	 font-size: 0.85rem;
+	 font-family: var(--font-roboto);
+}
+ .container2 .info-wrapper .nest-info:nth-child(1) {
+	 border-top: solid 2px silver;
+	 border-right: solid 2px silver;
+}
+ .container2 .info-wrapper .nest-info:nth-child(2) {
+	 border-top: solid 2px silver;
+}
+ .container2 .info-wrapper .nest-info:nth-child(3) {
+	 border-top: solid 2px silver;
+	 border-left: solid 2px silver;
+}
+ 
